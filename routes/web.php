@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello', function () {
+    return ("Halo Jeh!!");
+});
+
+Route::post('/po', function () {
+    return ("Halo POST!!");
+});
+
+Route::put('/put', function () {
+    return ("Halo PUT!!");
+});
+
+Route::delete('/delete', function () {
+    return ("Halo DELETE!!");
+});
