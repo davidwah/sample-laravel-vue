@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,18 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-    return ("Halo Jeh!!");
-});
+Route::get('/', [DashboardController::class, 'index']);
 
-Route::post('/po', function () {
-    return ("Halo POST!!");
-});
-
-Route::put('/put', function () {
-    return ("Halo PUT!!");
-});
-
-Route::delete('/delete', function () {
-    return ("Halo DELETE!!");
-});
